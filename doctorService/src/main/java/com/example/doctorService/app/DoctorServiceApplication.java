@@ -1,9 +1,11 @@
-package com.example.doctorService;
+package com.example.doctorService.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan("com.example.doctorService")
 public class DoctorServiceApplication {
 
 	public static void main(String[] args) {
