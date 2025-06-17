@@ -58,8 +58,8 @@ public class DoctorController {
 
     @GetMapping("/doctors/specialization/{name}")
     @ResponseBody
-    public List<Doctor> searchDoctorsBySpecialization(@PathVariable String specialization) {
-        return doctorService.searchDoctorsBySpecialization(specialization);
+    public List<Doctor> searchDoctorsBySpecialization(@PathVariable String name) {
+        return doctorService.searchDoctorsBySpecialization(name);
     }
 
     @GetMapping("/doctors/department/{departmentId}")
